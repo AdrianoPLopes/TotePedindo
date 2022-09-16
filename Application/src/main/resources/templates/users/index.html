@@ -27,8 +27,13 @@
 			<tbody>
 				<tr th:each="user : ${listaUsers}">
 					<td th:text="${user.nome}"></td>
+					<td th:text="${user.telefone}"></td>
 					<td th:text="${user.email}"></td>
-					<td></td>
+					<td>
+						<a th:href="@{/users/{id}(id=${user.id})}" class="btn btn-primary">Alterar</a>
+						<a th:href="@{/users/excluir/{id}(id=${user.id})}" class="btn btn-danger">Excluir</a>
+						
+					</td>
 				</tr>
 			</tbody>
 		</table>

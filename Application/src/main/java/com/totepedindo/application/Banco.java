@@ -25,7 +25,7 @@ public class Banco implements CommandLineRunner {
 		
 	Users p1 = new Users("Tote");
 	p1.setDataNascimento(LocalDate.of(1955, 7, 3));
-	p1.setEmail("abrl@bol.com,br");
+	p1.setEmail("abrl@bol.com.br");
 	
 	Users p2 = new Users("Adriano");
 	p2.setDataNascimento(LocalDate.of(1987, 1, 29));
